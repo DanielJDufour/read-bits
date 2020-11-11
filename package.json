@@ -1,6 +1,6 @@
 {
   "name": "read-bits",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Read Bits (1s and 0s) from Buffers, Array Buffers, Data Views, and Uint8Array with One Universal Function",
   "main": "read-bits.js",
   "scripts": {
