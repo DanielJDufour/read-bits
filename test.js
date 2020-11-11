@@ -40,3 +40,15 @@ test("reading half of second and third bytes", t => {
   t.is(byteEnd, 2);
   t.is(bits, "00010000");
 });
+
+test("reading 50 bits", t => {
+  const { bits, bitLength, byteEnd, byteStart } = readBits({
+    data,
+    start: 0,
+    length: 50
+  });
+  t.is(bitLength, 50);
+  t.is(byteStart, 0);
+  t.is(byteEnd, 6);
+  t.is(bits, "00000000000000010000001000000011000001000000010100");
+});
