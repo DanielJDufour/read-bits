@@ -24,19 +24,20 @@ const end = 5;
 // you will read 6 bits, from the first (index 0) to the 6th (index 5)
 
 const { bits } = readBits({ data: buffer, start, end });
-// bits are 011011
+// bits are "011011"
 
 const { bits } = readBits({ data: arrayBuffer, start, end });
-// bits are 011011
+// bits are "011011"
 
 const { bits } = readBits({ data: dataView, start, end });
-// bits are 011011
+// bits are "011011"
 
 const { bits } = readBits({ data: uint8Array, start, end });
-// bits are 011011
+// bits are "011011"
 ```
 
 You can also specify a length or number of bits to read
 ```js
 const { bits } = readBits({ data: buffer, start: 0, length: 6 });
+// bits are "011011"
 ```
