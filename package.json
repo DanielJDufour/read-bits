@@ -1,0 +1,30 @@
+{
+  "name": "read-bits",
+  "version": "0.0.0",
+  "description": "Read Bits (1s and 0s) from Buffers, Array Buffers, Data Views, and Uint8Array with One Universal Function",
+  "main": "read-bits.js",
+  "scripts": {
+    "format": "npx prettier --arrow-parens=avoid --trailing-comma=none --write *.js",
+    "test": "npx ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/read-bits.git"
+  },
+  "keywords": [
+    "array",
+    "arraybuffer",
+    "buffer",
+    "bits",
+    "bytes"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/read-bits/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/read-bits#readme",
+  "dependencies": {
+    "get-byte": "0.0.0"
+  }
+}
